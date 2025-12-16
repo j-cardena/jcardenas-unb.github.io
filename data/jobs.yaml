@@ -19,10 +19,10 @@
   project: Real-Time DTR & DER-Analytics Platform for NB Power
   description: Lead the development of a cloud-based Dynamic Thermal Rating and DER-analytics platform in partnership with NB Power. You will develop hybrid IEEE-738/ML models for conductor temperature prediction, build production-grade micro-services with CI/CD pipelines, lead field pilots on transmission corridors, and mentor graduate students.
   requirements:
-  - PhD in Power Systems, Controls, or Applied Machine Learning.
-  - 3+ years experience with utility data systems (PI/SCADA).
-  - Strong Python/MATLAB skills. Experience with containerization, CI/CD, and MLOps.
-  - Familiarity with IEEE-738 is an asset.
+    - PhD in Power Systems, Controls, or Applied Machine Learning.
+    - 3+ years experience with utility data systems (PI/SCADA).
+    - Strong Python/MATLAB skills. Experience with containerization, CI/CD, and MLOps.
+    - Familiarity with IEEE-738 is an asset.
   start_date: January 2026
   deadline: Open until filled
   funding: ResearchNB Research Professional Fund
