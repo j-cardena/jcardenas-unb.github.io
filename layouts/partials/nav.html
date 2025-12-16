@@ -1,9 +1,9 @@
 <nav>
     <div class="container">
-        <a href="{{ "/" | relURL }}" class="nav-name">{{ .Site.Params.name }}</a>
+        <a href="{{ "/" | absURL }}" class="nav-name">{{ .Site.Params.name }}</a>
         <ul class="nav-links">
             {{ range .Site.Menus.main }}
-            <li><a href="{{ .URL }}"{{ if eq $.RelPermalink .URL }} class="active"{{ end }}>{{ .Name }}</a></li>
+            <li><a href="{{ if hasPrefix .URL "#" }}{{ "/" | absURL }}{{ .URL }}{{ else }}{{ .URL | absURL }}{{ end }}"{{ if eq $.RelPermalink .URL }} class="active"{{ end }}>{{ .Name }}</a></li>
             {{ end }}
         </ul>
     </div>
