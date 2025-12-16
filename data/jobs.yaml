@@ -18,7 +18,7 @@
   type: Postdoctoral Fellow
   project: Real-Time DTR & DER-Analytics Platform for NB Power
   description: Lead the development of a cloud-based Dynamic Thermal Rating and DER-analytics platform in partnership with NB Power. You will develop hybrid IEEE-738/ML models for conductor temperature prediction, build production-grade micro-services with CI/CD pipelines, lead field pilots on transmission corridors, and mentor graduate students.
-  requirements: |
+  requirements:
     - PhD in Power Systems, Controls, or Applied Machine Learning.
     - Minimum of three years of experience with utility data systems and line-rating or DTR projects.
     - Proficiency in Python, MATLAB, and modern software development practices (CI/CD, MLOps).
