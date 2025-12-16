@@ -1,0 +1,246 @@
+{{ define "main" }}
+<!-- Hero -->
+<header class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>{{ .Site.Params.tagline | replaceRE "(Smart Grid)" "<span>$1</span>" | safeHTML }}</h1>
+                <p class="hero-subtitle">{{ .Site.Params.description }}</p>
+                <div class="hero-affiliation">
+                    <strong>{{ .Site.Params.title }}</strong>
+                    <span>{{ .Site.Params.department }}</span>
+                    <span>{{ .Site.Params.university }}</span>
+                    <strong style="margin-top: 12px;">{{ .Site.Params.chair }}</strong>
+                </div>
+                <div class="hero-links">
+                    <a href="mailto:{{ .Site.Params.email }}">
+                        {{ partial "icon.html" "email" }} Email
+                    </a>
+                    <a href="https://scholar.google.com/citations?user={{ .Site.Params.google_scholar }}" target="_blank">
+                        {{ partial "icon.html" "scholar" }} Scholar
+                    </a>
+                    <a href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}" target="_blank">
+                        {{ partial "icon.html" "linkedin" }} LinkedIn
+                    </a>
+                    <a href="https://orcid.org/{{ .Site.Params.orcid }}" target="_blank">
+                        {{ partial "icon.html" "orcid" }} ORCID
+                    </a>
+                    <a href="{{ "cv.pdf" | relURL }}" target="_blank">
+                        {{ partial "icon.html" "cv" }} CV
+                    </a>
+                </div>
+            </div>
+            <div class="hero-photo">
+                {{ if fileExists "static/photo.jpg" }}
+                <img src="{{ "photo.jpg" | relURL }}" alt="{{ .Site.Params.name }}">
+                {{ else }}
+                <div class="photo-placeholder">JC</div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Research -->
+<section id="research">
+    <div class="container">
+        <h2 class="section-title">Research Focus</h2>
+        <div class="research-grid">
+            {{ range .Site.Data.research }}
+            {{ if .active }}
+            <div class="research-card">
+                <h3>{{ .title }}</h3>
+                <p>{{ .description }}</p>
+            </div>
+            {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+    <div class="container">
+        <h2 class="section-title">Current Projects</h2>
+        {{ range .Site.Data.projects }}
+        {{ if eq .status "active" }}
+        <div class="project">
+            <div class="project-header">
+                <h3>{{ .title }}</h3>
+                {{ if .tag }}
+                <span class="project-tag tag-{{ .tag | lower }}">{{ .tag }}</span>
+                {{ end }}
+            </div>
+            <p>{{ .description }}</p>
+            <div class="project-meta">
+                {{ if .dates }}
+                <span>{{ partial "icon.html" "calendar" }} {{ .dates }}</span>
+                {{ end }}
+                {{ if .partners }}
+                <span>{{ partial "icon.html" "team" }} {{ .partners }}</span>
+                {{ end }}
+                {{ if .funding }}
+                <span>{{ partial "icon.html" "clock" }} {{ .funding }}</span>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+        {{ end }}
+    </div>
+</section>
+
+<!-- Publications -->
+<section id="publications">
+    <div class="container">
+        <h2 class="section-title">Selected Publications</h2>
+        {{ range .Site.Data.publications }}
+        {{ if .show }}
+        <div class="publication">
+            <div class="publication-title">
+                {{ if .doi }}
+                <a href="{{ if hasPrefix .doi "http" }}{{ .doi }}{{ else }}https://doi.org/{{ .doi }}{{ end }}" target="_blank">{{ .title }}</a>
+                {{ else }}
+                {{ .title }}
+                {{ end }}
+            </div>
+            <div class="publication-authors">{{ .authors | replaceRE "(Cardenas[^,]*)" "<strong>$1</strong>" | safeHTML }}</div>
+            <div class="publication-venue">{{ .venue }}{{ if .year }}, {{ .year }}{{ end }}</div>
+        </div>
+        {{ end }}
+        {{ end }}
+        <p style="margin-top: 32px; color: var(--color-text-muted);">
+            <a href="https://scholar.google.com/citations?user={{ .Site.Params.google_scholar }}">View all publications on Google Scholar →</a>
+        </p>
+    </div>
+</section>
+
+<!-- Team -->
+<section id="team">
+    <div class="container">
+        <h2 class="section-title">Research Team</h2>
+        
+        {{ with .Site.Data.team.postdocs }}
+        <div class="team-category">
+            <h3>Postdoctoral Fellows</h3>
+            <div class="team-grid">
+                {{ range . }}
+                <div class="team-member">
+                    <strong>{{ .name }}</strong>
+                    <span>{{ .topic }}</span>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+        
+        {{ with .Site.Data.team.phd }}
+        <div class="team-category">
+            <h3>PhD Students</h3>
+            <div class="team-grid">
+                {{ range . }}
+                <div class="team-member">
+                    <strong>{{ .name }}</strong>
+                    <span>{{ .topic }}</span>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+        
+        {{ with .Site.Data.team.msc }}
+        <div class="team-category">
+            <h3>MSc Students</h3>
+            <div class="team-grid">
+                {{ range . }}
+                <div class="team-member">
+                    <strong>{{ .name }}</strong>
+                    <span>{{ .topic }}</span>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+        
+        {{ with .Site.Data.team.postdoc_alumni }}
+        <div class="team-category alumni-category">
+            <h3>Postdoctoral Alumni</h3>
+            <div class="team-grid">
+                {{ range . }}
+                <div class="team-member">
+                    <strong>{{ .name }}</strong>
+                    <span>{{ .topic }}</span>
+                    {{ if .position }}<span class="alumni-position">{{ .position }}</span>{{ end }}
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+        
+        {{ with .Site.Data.team.phd_alumni }}
+        <div class="team-category alumni-category">
+            <h3>PhD Alumni</h3>
+            <div class="team-grid">
+                {{ range . }}
+                <div class="team-member">
+                    <strong>{{ .name }}</strong>
+                    <span>{{ .topic }}</span>
+                    {{ if .position }}<span class="alumni-position">{{ .position }}</span>{{ end }}
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+        
+        {{ with .Site.Data.team.msc_alumni }}
+        <div class="team-category alumni-category">
+            <h3>MSc Alumni</h3>
+            <div class="team-grid">
+                {{ range . }}
+                <div class="team-member">
+                    <strong>{{ .name }}</strong>
+                    <span>{{ .topic }}</span>
+                    {{ if .position }}<span class="alumni-position">{{ .position }}</span>{{ end }}
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+        
+        <div class="alumni-highlight">
+            <strong>Alumni:</strong> Our graduates have gone on to positions at Huawei, Hatch, Nova Scotia Power, Open System International, Cognizant, Universidad Yachay Tech, and UPEI.
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <div class="contact-item">
+                    {{ partial "icon.html" "email" }}
+                    <div><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></div>
+                </div>
+                <div class="contact-item">
+                    {{ partial "icon.html" "phone" }}
+                    <div>{{ .Site.Params.phone }}</div>
+                </div>
+                <div class="contact-item">
+                    {{ partial "icon.html" "location" }}
+                    <div>
+                        {{ .Site.Params.office }}<br>
+                        {{ .Site.Params.address }}
+                    </div>
+                </div>
+            </div>
+            <div class="contact-cta">
+                <h3>Join Our Team</h3>
+                <p>We're actively recruiting graduate students and postdoctoral researchers interested in power systems, machine learning, and renewable energy integration.</p>
+                <a href="{{ "jobs/" | relURL }}">View Current Openings</a>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

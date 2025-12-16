@@ -1,0 +1,120 @@
+# Research Team
+# Edit this file to update your team members
+#
+# Fields:
+#   name: Full name
+#   topic: Research topic / thesis title
+#   position: Current job (for alumni only, leave empty for current members)
+#
+# Categories: postdocs, phd, msc, postdoc_alumni, phd_alumni, msc_alumni
+# Members appear in the order listed within each category
+
+postdocs:
+  - name: Tohid Rahimi
+    topic: VPP Hierarchical Optimization and Control Systems
+
+phd:
+  - name: Faezeh Bashiri
+    topic: Forecasting of Aggregated Embedded Energy Resources
+  
+  - name: Pegah Yazdkhasti
+    topic: Dynamic Modeling of Thermostatically Controlled Appliances for DSM
+  
+  - name: Wei Shang
+    topic: VoicedTracks and Speech Playback Attack Detection
+  
+  - name: Aryoraad Khodaparast
+    topic: V2G Technologies for Ancillary Services
+  
+  - name: Abdallah Wael Mustafa
+    topic: Distributed Solar Forecasting & Smart Grid Integration
+  
+  - name: Zeinab Hojjatinia
+    topic: Load Forecasting for Smart Grid Functions
+
+msc:
+  - name: Anas Cherif
+    topic: Advanced Wind Power Forecasting Techniques
+  
+  - name: Bishal Das
+    topic: Load Modelling for Emerging Power Systems
+  
+  - name: Michael Bourque
+    topic: Verification of Digital Twins for Smart Grids
+  
+  - name: Sakib Shahriar Joy
+    topic: Solid-State Transformer for Renewable Integration
+  
+  - name: Whomaira Faarhin Durdana
+    topic: V2G Technologies for Frequency Regulation
+
+postdoc_alumni:
+  - name: Siamak Shirmohammadi
+    topic: Optimization Strategies for Virtual Power Plants
+    position: ""
+  
+  - name: Hossein Shokouhinejad
+    topic: Control Technologies for Dispatching Energy Resources
+    position: Post-doctorate, Canadian Institute for Cybersecurity
+  
+  - name: Juan Pablo Astudillo Leon
+    topic: Simulation of Wireless AMI Networks
+    position: Assistant Professor, Universidad Yachay Tech
+  
+  - name: Hossam Mosbah
+    topic: Optimization Methods for DER Integration in Peak Shaving
+    position: University Lecturer, UPEI
+  
+  - name: Ahmad Mezher
+    topic: Smart Grid Communications
+    position: Research Assistant, UNB
+
+phd_alumni:
+  - name: Xun Gong
+    topic: Aggregated Load Forecast and Control Using TCLs
+    position: Senior Researcher, Huawei Technologies Canada
+  
+  - name: Hao Yan
+    topic: Modeling and Control of Residential Electrical Thermal Storage
+    position: ""
+
+msc_alumni:
+  - name: Zahid Ali Khan
+    topic: Centralized Control Strategy for Voltage Regulation Using PV Inverters
+    position: ""
+  
+  - name: Shafiat Ahmed
+    topic: Dynamic Volt-Watt and Volt-Var Control for High PV Penetration
+    position: ""
+  
+  - name: Afnan Rudabe Rahman
+    topic: Net-Load Variance Minimization Using Smart EV Charging
+    position: SCADA Engineer in Training, Nova Scotia Power
+  
+  - name: Mohammadreza Shafiee
+    topic: Dynamic Spinning Reserve EMS for Microgrid Resilience
+    position: ""
+  
+  - name: Hossein Goordazi
+    topic: Managing Load Aggregations and DG for Peak Shaving
+    position: Electrical Engineer, Hatch
+  
+  - name: Jonas Fernandes
+    topic: Co-simulation of Power and Communication Networks
+    position: Project Engineer, Open System International
+  
+  - name: Taidy Diaz Guerra
+    topic: Load Forecasting for Smart Grid Functions
+    position: Research Assistant, UNB
+  
+  - name: Manuel Mendoza Miranda
+    topic: Dispatch Capacity Forecasting of DERs for Peak Shaving
+    position: ""
+  
+  - name: Tolulope Oluwaseun Olugbenga
+    topic: Deep Learning Techniques for Electrical Load Forecasting
+    position: Senior Software Engineer, Cognizant Canada
+  
+  - name: Nisha Rajendran
+    topic: Performance Evaluation of Interconnecting Devices for AMI
+    position: Data Analyst, SmartSkin Technologies

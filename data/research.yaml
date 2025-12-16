@@ -1,0 +1,33 @@
+# Research Focus Areas
+# Edit this file to update the research themes on your homepage
+# 
+# Fields:
+#   title: Short title for the research area
+#   description: 1-2 sentence description
+#   active: true = shown, false = hidden
+#
+# Order: Items appear in the order listed below
+
+- title: Renewable Integration
+  description: Dynamic thermal rating, hosting capacity analysis, and forecasting methods to maximize renewable penetration on existing infrastructure.
+  active: true
+
+- title: Distributed Energy Resources
+  description: Control and optimization of DER aggregations—solar inverters, EVs, and thermostatically controlled loads—for grid services.
+  active: true
+
+- title: Load Forecasting
+  description: Deep learning and probabilistic methods for short-term load and generation forecasting at multiple scales.
+  active: true
+
+- title: Virtual Power Plants
+  description: Hierarchical optimization and control architectures for coordinating distributed assets as dispatchable resources.
+  active: true
+
+- title: Smart Grid Communications
+  description: Routing protocols and network optimization for Advanced Metering Infrastructure and utility IoT deployments.
+  active: true
+
+- title: Demand-Side Management
+  description: Algorithms for peak shaving, voltage regulation, and ancillary services using flexible customer loads.
+  active: true

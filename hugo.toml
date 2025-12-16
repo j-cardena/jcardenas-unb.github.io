@@ -1,0 +1,47 @@
+baseURL = "https://j-cardena.github.io/"
+languageCode = "en-us"
+title = "Julian Cardenas Barrera | Smart Grid Technologies"
+
+[params]
+  name = "Julian Cardenas Barrera"
+  title = "Associate Professor"
+  department = "Department of Electrical & Computer Engineering"
+  university = "University of New Brunswick, Fredericton"
+  chair = "NB Power Industrial Research Chair in Smart Grid Technologies"
+  tagline = "Building the Smart Grid for Atlantic Canada"
+  description = "I develop machine learning and optimization methods that help utilities integrate renewable energy, manage distributed resources, and operate the grid more efficiently."
+  email = "jcardena@unb.ca"
+  phone = "+1 (506) 453-4554"
+  office = "Head Hall, Room H2078A / D33"
+  address = "University of New Brunswick, P.O. Box 4400, Fredericton, NB E3B 5A3"
+  
+  # Update these with your actual IDs
+  google_scholar = "or2t-_UAAAAJ"
+  linkedin = "j-cardena"
+  orcid = "0000-0002-3674-3995"
+  
+[menu]
+  [[menu.main]]
+    name = "Research"
+    url = "#research"
+    weight = 1
+  [[menu.main]]
+    name = "Projects"
+    url = "#projects"
+    weight = 2
+  [[menu.main]]
+    name = "Publications"
+    url = "#publications"
+    weight = 3
+  [[menu.main]]
+    name = "Team"
+    url = "#team"
+    weight = 4
+  [[menu.main]]
+    name = "Opportunities"
+    url = "/jobs/"
+    weight = 5
+  [[menu.main]]
+    name = "Contact"
+    url = "#contact"
+    weight = 6

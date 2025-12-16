@@ -1,0 +1,48 @@
+# Selected Publications
+# Edit this file to update the publications on your homepage
+# Keep this to 5-8 key papers. Link to Google Scholar for the full list.
+#
+# Fields:
+#   title: Paper title
+#   authors: Author list (your name will be bolded automatically)
+#   venue: Journal or conference name
+#   year: Publication year
+#   doi: Optional - DOI or full URL (makes title clickable)
+#   show: true = displayed, false = hidden
+#
+# Order: Items appear in the order listed (typically newest first)
+
+- title: One-Node Method to Implement Smart Grid Functions Using a Battery Storage System
+  authors: S.A. Saleh, E.C. McSporran, J.L. Cardenas Barrera, E. Castillo-Guerra, C.P. Diduch
+  venue: IEEE Transactions on Industry Applications
+  year: 2025
+  doi: ""
+  show: true
+
+- title: "Peak Shaving Impact on Load Forecasting: A Strategy for Mitigation"
+  authors: Z. Hojjatinia, A. Mezher, E. Castillo Guerra, J. Cardenas Barrera, S. Saleh
+  venue: IEEE Access
+  year: 2024
+  doi: ""
+  show: true
+
+- title: "Q-RPL: Q-Learning-Based Routing Protocol for Advanced Metering Infrastructure in Smart Grids"
+  authors: C.L. Duenas Santos, A. Mezher, J.P. Astudillo León, J. Cardenas Barrera, E. Castillo Guerra, J. Meng
+  venue: Sensors
+  year: 2024
+  doi: ""
+  show: true
+
+- title: Exploring the Potential, Limitations, and Future Directions of Wireless Technologies in Smart Grid Networks
+  authors: J.P. Astudillo Leon, C.L. Duenas Santos, A. Mezher, J.L. Cardenas Barrera, J. Meng, E. Castillo Guerra
+  venue: Computer Networks
+  year: 2023
+  doi: ""
+  show: true
+
+- title: Robust Hierarchical Control Mechanism for Aggregated Thermostatically Controlled Loads
+  authors: X. Gong, E. Castillo-Guerra, J.L. Cardenas-Barrera, B. Cao, S.A. Saleh, L. Chang
+  venue: IEEE Transactions on Smart Grid
+  year: 2021
+  doi: ""
+  show: true

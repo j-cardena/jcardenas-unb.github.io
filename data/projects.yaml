@@ -1,0 +1,37 @@
+# Research Projects
+# Edit this file to update the projects section on your homepage
+#
+# Fields:
+#   title: Project name
+#   description: 2-3 sentence description
+#   status: active, completed, or hidden
+#   tag: hiring, active, new, or leave empty (controls the badge)
+#   dates: Date range (e.g., "2024-2027")
+#   partners: Partner organizations
+#   funding: Funding source
+#
+# Order: Items appear in the order listed below
+
+- title: Real-Time Dynamic Thermal Rating & DER-Analytics Platform
+  description: Developing a production-ready Dynamic Thermal Rating system in partnership with NB Power. The platform combines IEEE-738 thermal models with ML-based weather nowcasting to unlock 15–30% additional transmission capacity, supporting NB's target of 1,600 MW new renewables by 2035.
+  status: active
+  tag: hiring
+  dates: "2026"
+  partners: NB Power Partnership
+  funding: ResearchNB RPF Funded
+
+- title: Atlantic Digital Grid
+  description: An $8.4M consortium developing next-generation grid technologies for Atlantic Canada. Our themes span smart grid cybersecurity, virtual power plant optimization, advanced metering infrastructure, and DER integration—with industry partners including NB Power, Emera, Siemens, and Lockheed Martin.
+  status: active
+  tag: active
+  dates: "2020–2027"
+  partners: Multi-institution Consortium
+  funding: ACOA AIF Funded
+
+- title: Multi-Physics Dynamic Thermal Rating
+  description: Developing advanced DTR algorithms that incorporate multi-physics thermal modeling and IoT sensor pipelines. This foundational research informs the production deployment with NB Power.
+  status: active
+  tag: active
+  dates: "2025–2027"
+  partners: ""
+  funding: ResearchNB RAI Funded

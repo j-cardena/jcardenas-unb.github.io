@@ -1,0 +1,96 @@
+{{ define "main" }}
+<header class="page-header">
+    <div class="container">
+        <h1>{{ .Title }}</h1>
+        <p>Join our research group working on smart grid technologies, renewable energy integration, and power systems optimization.</p>
+    </div>
+</header>
+
+<main style="padding: 60px 0;">
+    <div class="container">
+        {{ $openJobs := where .Site.Data.jobs "open" true }}
+        
+        {{ if $openJobs }}
+        {{ range $openJobs }}
+        <article class="job-posting">
+            <div class="job-header">
+                <h2 class="job-title">{{ .title }}</h2>
+                {{ if .type }}<span class="job-type">{{ .type }}</span>{{ end }}
+            </div>
+            
+            {{ if .project }}
+            <div class="job-project">📁 {{ .project }}</div>
+            {{ end }}
+            
+            {{ if .description }}
+            <div class="job-section">
+                <div class="job-section-title">About the Position</div>
+                <p>{{ .description }}</p>
+            </div>
+            {{ end }}
+            
+            {{ if .requirements }}
+            <div class="job-section">
+                <div class="job-section-title">Requirements</div>
+                <p>{{ .requirements }}</p>
+            </div>
+            {{ end }}
+            
+            <div class="job-meta">
+                {{ if .start_date }}
+                <div class="job-meta-item">
+                    {{ partial "icon.html" "calendar" }}
+                    Start: {{ .start_date }}
+                </div>
+                {{ end }}
+                
+                {{ if .deadline }}
+                <div class="job-meta-item">
+                    {{ partial "icon.html" "clock" }}
+                    Deadline: {{ .deadline }}
+                </div>
+                {{ end }}
+                
+                {{ if .funding }}
+                <div class="job-meta-item">
+                    {{ partial "icon.html" "money" }}
+                    {{ .funding }}
+                </div>
+                {{ end }}
+            </div>
+            
+            <div class="job-apply">
+                <a href="mailto:{{ $.Site.Params.email }}?subject=Application: {{ .title | urlquery }}">
+                    {{ partial "icon.html" "email" }}
+                    Apply Now
+                </a>
+            </div>
+        </article>
+        {{ end }}
+        {{ else }}
+        <div class="no-openings">
+            <h2>No Current Openings</h2>
+            <p>We don't have any funded positions available at the moment, but we're always interested in hearing from motivated researchers.</p>
+        </div>
+        {{ end }}
+        
+        <div class="general-interest">
+            <h2>Interested in Future Opportunities?</h2>
+            <p>Even if there are no current openings that match your profile, we welcome inquiries from motivated students and researchers interested in:</p>
+            <ul>
+                <li>Power systems optimization and control</li>
+                <li>Machine learning for energy applications</li>
+                <li>Renewable energy integration and forecasting</li>
+                <li>Smart grid communications and cybersecurity</li>
+                <li>Electric vehicle grid integration (V2G)</li>
+            </ul>
+            <p>
+                <strong>Prospective graduate students:</strong> Review the <a href="https://www.unb.ca/gradstudies/admissions/" target="_blank">UNB graduate admissions requirements</a> and send your CV and research interests to <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>.
+            </p>
+            <p>
+                <strong>Postdoctoral researchers:</strong> If you have external funding (e.g., NSERC PDF, Banting, Marie Curie) or are interested in applying for funding together, please get in touch.
+            </p>
+        </div>
+    </div>
+</main>
+{{ end }}
