@@ -619,6 +619,17 @@ section:nth-child(odd) .team-member {
     line-height: 1.7;
 }
 
+/* Job requirements list alignment */
+.job-section ul {
+    margin: 0.75rem 0 0 0;
+    padding-left: 1.25rem;   /* aligns bullets with paragraph text */
+}
+
+.job-section li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
 .job-meta {
     display: flex;
     flex-wrap: wrap;
