@@ -12,13 +12,13 @@ title = "Julian Cardenas Barrera | Smart Grid Technologies"
   description = "I develop machine learning and optimization methods that help utilities integrate renewable energy, manage distributed resources, and operate the grid more efficiently."
   email = "jcardena@unb.ca"
   phone = "+1 (506) 453-4554"
-  office = "Head Hall, Room E-44"
+  office = "Head Hall, Room H2078A / D33"
   address = "University of New Brunswick, P.O. Box 4400, Fredericton, NB E3B 5A3"
   
   # Update these with your actual IDs
-  google_scholar = "YOUR_SCHOLAR_ID"
-  linkedin = "YOUR_LINKEDIN"
-  orcid = "YOUR_ORCID"
+  google_scholar = "or2t-_UAAAAJ"
+  linkedin = "j-cardena"
+  orcid = "0000-0002-3674-3995"
   
 [menu]
   [[menu.main]]

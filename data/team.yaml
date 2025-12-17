@@ -17,27 +17,12 @@ phd:
   - name: Faezeh Bashiri
     topic: Forecasting of Aggregated Embedded Energy Resources
   
-  - name: Pegah Yazdkhasti
-    topic: Dynamic Modeling of Thermostatically Controlled Appliances for DSM
-  
   - name: Wei Shang
     topic: VoicedTracks and Speech Playback Attack Detection
   
-  - name: Aryoraad Khodaparast
-    topic: V2G Technologies for Ancillary Services
-  
-  - name: Abdallah Wael Mustafa
-    topic: Distributed Solar Forecasting & Smart Grid Integration
-  
-  - name: Zeinab Hojjatinia
-    topic: Load Forecasting for Smart Grid Functions
-
 msc:
   - name: Anas Cherif
     topic: Advanced Wind Power Forecasting Techniques
-  
-  - name: Bishal Das
-    topic: Load Modelling for Emerging Power Systems
   
   - name: Michael Bourque
     topic: Verification of Digital Twins for Smart Grids
@@ -67,18 +52,26 @@ postdoc_alumni:
   
   - name: Ahmad Mezher
     topic: Smart Grid Communications
-    position: Research Assistant, UNB
+    position: Project Manager, Net-Zero Atlantic
 
 phd_alumni:
   - name: Xun Gong
     topic: Aggregated Load Forecast and Control Using TCLs
     position: Senior Researcher, Huawei Technologies Canada
-  
+
   - name: Hao Yan
     topic: Modeling and Control of Residential Electrical Thermal Storage
     position: ""
 
+  - name: Carlos Bazan
+    topic: Compression of EEG signals
+    position: Professor. Universidad Central de Las Villas, Cuba
+
 msc_alumni:
+  - name: Bishal Das
+    topic: Load Modelling for Emerging Power Systems
+    position: ""
+
   - name: Zahid Ali Khan
     topic: Centralized Control Strategy for Voltage Regulation Using PV Inverters
     position: ""
@@ -105,11 +98,11 @@ msc_alumni:
   
   - name: Taidy Diaz Guerra
     topic: Load Forecasting for Smart Grid Functions
-    position: Research Assistant, UNB
+    position: Research Scientist, SmartSkin Technologies
   
   - name: Manuel Mendoza Miranda
     topic: Dispatch Capacity Forecasting of DERs for Peak Shaving
-    position: ""
+    position: Electronic Tech., SmartSkin Technologies
   
   - name: Tolulope Oluwaseun Olugbenga
     topic: Deep Learning Techniques for Electrical Load Forecasting
